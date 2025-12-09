@@ -187,3 +187,4 @@ const pokemonGrid = document.getElementById('pokemonGrid');
         
         // Charger les données au démarrage
         fetchPokemonData();
+        
