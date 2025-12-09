@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex - Liste des Pokémon</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  
+</head>
+<body>
+  <div class="container">
+        <!-- En-tête -->
+        <div class="header-section text-center mb-4">
+            <h1 class="display-4 fw-bold">Pokédex</h1>
+            <p class="lead">Découvrez tous les Pokémon !</p>
+        </div>
+        
+        <!-- Contrôles de recherche et filtrage -->
+        <div class="row mb-4">
+            <div class="col-md-6 mb-3 mb-md-0">
+                <div class="input-group">
+                    <span class="input-group-text bg-white">
+                        <i class="bi bi-search"></i>
+                    </span>
+                    <input type="text" class="form-control" id="searchInput" placeholder="Rechercher un Pokémon...">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <select class="form-select" id="typeFilter">
+                    <option value="">Tous les types</option>
+                    <option value="Normal">Normal</option>
+                    <option value="Feu">Feu</option>
+                    <option value="Eau">Eau</option>
+                    <option value="Plante">Plante</option>
+                    <option value="Électrik">Électrik</option>
+                    <option value="Glace">Glace</option>
+                    <option value="Combat">Combat</option>
+                    <option value="Poison">Poison</option>
+                    <option value="Sol">Sol</option>
+                    <option value="Vol">Vol</option>
+                    <option value="Psy">Psy</option>
+                    <option value="Insecte">Insecte</option>
+                    <option value="Roche">Roche</option>
+                    <option value="Spectre">Spectre</option>
+                    <option value="Dragon">Dragon</option>
+                    <option value="Ténèbres">Ténèbres</option>
+                    <option value="Acier">Acier</option>
+                    <option value="Fée">Fée</option>
+                </select>
+            </div>
+        </div>
+        
+        <!-- Indicateur de chargement -->
+        <div id="loading" class="text-center my-5 loading-spinner">
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Chargement Merci de patienter...</span>
+            </div>
+            <p class="mt-2">Chargement des Pokémon, veuillez patienter...</p>
+        </div>
+        
+        <!-- Message d'erreur -->
+        <div id="error" class="alert alert-danger text-center" style="display: none;"></div>
+        
+        <!-- Grille des Pokémon (3 colonnes) -->
+        <div class="row g-4" id="pokemonGrid">
+            <!-- Les cartes Pokémon seront ajoutées ici dynamiquement -->
+        </div>
+    </div>
+
+
+<script src="script.js"></script>    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>
