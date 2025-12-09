@@ -1,4 +1,4 @@
-        body {
+body {
             background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
             min-height: 100vh;
             padding-top: 20px;
@@ -57,4 +57,28 @@
         
         .loading-spinner {
             color: white;
+        }
+
+        .load-more-btn {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border: 2px solid white;
+            color: white;
+            font-weight: bold;
+            padding: 12px 30px;
+            transition: all 0.3s ease;
+        }
+
+        .load-more-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .pokemon-count {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 10px 20px;
+            color: white;
+            margin-bottom: 20px;
         }
