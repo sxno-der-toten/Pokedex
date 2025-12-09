@@ -1,8 +1,9 @@
 body {
-            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
-            min-height: 100vh;
-            padding-top: 20px;
-            padding-bottom: 40px;
+            background: linear-gradient(135deg, #770000, #000000, #ffffff);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh
+
         }
         
         .pokemon-card {
